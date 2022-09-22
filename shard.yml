@@ -7,6 +7,10 @@ authors:
 
 crystal: ">= 0.23.1, < 2.0.0"
 
+dependencies:
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
+
 development_dependencies:
   minitest:
     github: ysbaddaden/minitest.cr

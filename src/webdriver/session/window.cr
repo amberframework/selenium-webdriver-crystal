@@ -1,3 +1,5 @@
+require "json_mapping"
+
 module Selenium
   class Session
     class Window
