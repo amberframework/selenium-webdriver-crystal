@@ -1,13 +1,15 @@
+require "json"
+
 module Selenium
   class Session
     class Window
       struct Rect
-        JSON.mapping(
-          height: Int64,
-          width: Int64,
-          x: Int64,
-          y: Int64
-        )
+        include JSON::Serializable
+
+        @height: Int64
+        @width: Int64
+        @x: Int64
+        @y: Int64
       end
 
       def initialize(@session : Session)
